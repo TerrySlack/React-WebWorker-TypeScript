@@ -1,0 +1,39 @@
+{
+  "compilerOptions": {
+    "baseUrl": "./",
+    "paths": {
+      "Assets/*": ["public/assets/*"],
+      "Components/*": ["src/shared/components/*"],
+      "Containers/*": ["src/shared/containers/*"],
+      "HOC/*": ["src/shared/hoc/*"],
+      "Hooks/*": ["src/shared/hooks/*"],
+      "Utils/*": ["src/utils/*"],
+      "Pages/*": ["src/pages/*"],
+      "Context/*": ["src/shared/context/*"],
+      "moment": ["../node_modules/moment/min/moment.min.js"]
+    },
+    "allowJs": true,
+    "moduleResolution": "node",
+    "rootDirs": ["src"],
+    "outDir": "./dist/",
+    "sourceMap": true,
+    "module": "esnext", //This allows for tree shaking.  using commonjs does not
+    "target": "es6",
+    "lib": ["es5", "es6", "es7", "es2020", "dom", "webworker"],
+    "jsx": "react",
+    "allowSyntheticDefaultImports": true,
+    "forceConsistentCasingInFileNames": true,
+    "noImplicitReturns": true,
+    "noImplicitThis": true,
+    "noImplicitAny": false,
+    "strictNullChecks": false,
+    "suppressImplicitAnyIndexErrors": true,
+    "noUnusedLocals": false,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "esModuleInterop": true,
+    "typeRoots": ["./src/types", "./node_modules/@types"],
+    "types": ["node"]
+  },
+  "include": ["./src/**/*"]
+}
