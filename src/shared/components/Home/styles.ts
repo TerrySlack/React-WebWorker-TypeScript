@@ -1,6 +1,5 @@
 const styles = {
-  container: {
-    //display: "flex",
+  container: {    
     backgroundColor: '#000',
     color: "goldenrod",
     width: "100%",
@@ -19,6 +18,10 @@ const styles = {
     color: "yellowgreen",
     fontWeight: 'bold',
     textAlign: "center",
+  },
+  launchContainer:{
+    display: "flex",
+    justifyContent: "center",
   }
 };
 

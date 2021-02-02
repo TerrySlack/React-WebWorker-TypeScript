@@ -13,7 +13,7 @@ interface Props {
   Loop through and apply a class based on whether the index is odd or even
 */
 const primesHelper = (primeNumbers: number[], classes: any) =>
-  primeNumbers.map((prime: number, index: number) => {
+  primeNumbers?.map((prime: number, index: number) => {
     const className = index % 2 ? classes.primeEven : classes.primeOdd;
     return (
       <div key={prime} className={`${classes.common} ${className}`}>

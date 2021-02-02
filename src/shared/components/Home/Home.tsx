@@ -4,6 +4,7 @@ import { createUseStyles } from "react-jss";
 import { areEqualShallow } from "../../../utils/areEqual";
 import styles from "./styles";
 import { PrimeNumbers } from "../../containers/PrimeNumbers";
+import {Launches} from "../../containers/Launches";
 interface Props {}
 const Home: FC<Props> = memo(() => {
   //Use React-JSS to deal with styles and the issue of uniquie class names and avoiding global collisions
@@ -18,6 +19,9 @@ const Home: FC<Props> = memo(() => {
         <div className={classes.primeNumberContainer}>
           <PrimeNumbers />
         </div>
+      </div>
+      <div className={classes.launchContainer}>
+        <Launches />
       </div>
     </div>
   );
