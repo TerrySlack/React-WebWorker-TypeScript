@@ -16,12 +16,10 @@ interface Props {}
 const Routes: FC<Props> = () => {
   return (
     <Router history={BrowserHistory}>
-      <div>
-        <Switch>
-          <Route exact path="/" render={() => <Home />} />
-          <Route>404: Page not found</Route>
-        </Switch>
-      </div>
+      <Switch>
+        <Route exact path="/" render={() => <Home />} />
+        <Route>404: Page not found</Route>
+      </Switch>
     </Router>
   );
 };

@@ -18,10 +18,6 @@ const styles = {
     color: "yellowgreen",
     fontWeight: 'bold',
     textAlign: "center",
-  },
-  launchContainer:{
-    display: "flex",
-    justifyContent: "center",
   }
 };
 

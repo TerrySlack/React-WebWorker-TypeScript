@@ -32,9 +32,7 @@ const LaunchContainer: FC<Props> = memo(() => {
     };
   }, [worker]);
   return (
-    <div>
-      <Launches launches={launches} />
-    </div>
+    <Launches launches={launches} />
   );
 }, areEqualShallow);
 

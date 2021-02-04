@@ -20,9 +20,7 @@ const Home: FC<Props> = memo(() => {
           <PrimeNumbers />
         </div>
       </div>
-      <div className={classes.launchContainer}>
-        <Launches />
-      </div>
+      <Launches />
     </div>
   );
 }, areEqualShallow);

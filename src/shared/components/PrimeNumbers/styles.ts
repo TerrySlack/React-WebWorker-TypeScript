@@ -17,6 +17,13 @@ const styles = {
     width: "4rem",
     height: "4rem",
   },
+  primeNumberTitle: {
+    paddingTop: "3rem",
+    paddingBottom: "3rem",
+    color: "yellowgreen",
+    fontWeight: "bold",
+    textAlign: "center",
+  },
 };
 
 export default styles;
