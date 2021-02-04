@@ -16,6 +16,7 @@ const styles = {
     fontFamily: 'Georgia, "Times New Roman", Times, serif',
     width: "4rem",
     height: "4rem",
+    boxShadow: "0 0 20px salmon",
   },
   primeNumberTitle: {
     paddingTop: "3rem",

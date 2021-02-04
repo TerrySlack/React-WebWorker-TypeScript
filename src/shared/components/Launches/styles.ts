@@ -1,28 +1,7 @@
 const styles = {
   container: {
-    backgroundColor: "#000",
     color: "goldenrod",
     width: "100%",
-  },
-  td1: {
-    color: "dodgerblue",
-    padding: "1em",
-    fontWeight: "bold",
-  },
-  td2: {
-    color: "#C0C0C0",
-    padding: "1em",
-    fontWeight: "bold",
-  },
-  td3: {
-    color: "dodgerblue",
-    padding: "1em",
-    fontWeight: "bold",
-  },
-  thead: {
-    color: "#C0C0C0",
-    padding: "1em",
-    fontWeight: "bold",
   },
   launchTitle: {
     paddingTop: "3rem",
@@ -45,50 +24,6 @@ const styles = {
     justifyContent: "center",
   },
   //Table css
-  responsiveTable: {
-    width: "100%",
-    margin: "0",
-    padding: "0",
-    borderCollapse: "collapse",
-    borderSpacing: 0,
-
-    "& > thead": {
-      visibility: "visible",
-      background: "#000",
-      position: "sticky",
-      top: 0,
-    },
-    "& > tr": {
-      border: "1px solid #ddd",
-      borderBottom: "2px solid #ddd",
-      padding: "5px",
-      marginBottom: "10px",
-      display: "block",
-      color: "black !important",
-    },
-    "& > td": {
-      padding: "10px",
-      display: "block",
-      textAlign: "center",
-      fontSize: "13px",
-      borderBottom: "1px dotted #ddd",
-      "&:last-child": {
-        borderBottom: "none",
-      },
-      "&:before": {
-        content: "attr(data-label)",
-        float: "left",
-        textTransform: "uppercase",
-        fontWeight: "bold",
-      },
-    },
-    "& > th": {
-      padding: "10px",
-      textAlign: "center",
-      textTransform: "uppercase",
-      fontSize: "11",
-    },
-  },
   "@media screen and (max-width : 600px) and (orientation: portrait)": {
     responsiveTable: {
       "& >thead": {
@@ -104,13 +39,76 @@ const styles = {
       },
       "& > td": {
         display: "table-cell",
-        textAlign: "left",
-        fontSize: "14px",
+        textAlign: "left",        
         borderBottom: "none",
         "&:before": {
           content: '""',
           display: "none",
         },
+      },
+    },
+  },
+  table: {
+    width: "80%",
+    fontFamily: '"Comic Sans MS", "Comic Sans", cursive;',
+    borderCollapse: "collapse",
+    overflow: "hidden",
+    boxShadow: "0 0 20px rgba(0, 0, 0, 0.1)",
+    "& thead": {
+      position: "sticky",
+      top: 0,  
+      marginBottom:'1rem'   
+    },
+    "& tbody tr": {
+      "& td": {
+        position: "relative",
+        "&:hover": {
+          "&:before": {
+            content: "''",
+            position: "absolute",
+            left: 0,
+            right: 0,
+            top: -9999,
+            bottom: -9999,
+            backgroundColor: "rgba(255, 255, 255, 0.2)",
+            zIndex: -1,
+          },
+        },
+      },
+      "&:hover": {
+        backgroundColor: "rgba(255, 255, 255, 0.3)",
+        cursor: "pointer",
+      },
+    },
+    "& tr":{
+      paddingTop:'1rem',
+     paddingBottom:'1rem',
+    },
+    "& th, &td": {
+      padding: "0.25em 0.5em",
+      backgroundColor: "rgba(255, 255, 255, 0.2)",
+      color: "#fff",
+      textAlign: "left",
+    },
+    "& th": {
+      textAlign: "left",
+    },
+    "& td:nth-child(2)": {
+      textAlign: "left",
+    }
+  },
+  zigzag: {
+    borderCollapse: "separate",
+    borderSpacing: "8rem 1rem",
+    "& thead tr": {
+      transform: "rotate(-1deg)",
+    },
+    "& tbody tr": {     
+      "&:nth-child(odd)": {
+        transform: "rotate(1deg)",
+      },
+      "&:nth-child(even)": {
+        transform: "rotate(-1deg)",
       },
     },
   },

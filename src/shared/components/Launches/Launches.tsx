@@ -18,8 +18,8 @@ const Launches: FC<Props> = ({ launches }: Props) => {
         </span>
       </div>
       <div className={`${classes.scroll} ${classes.center}`}>
-        <table className={classes.responsiveTable}>
-          <thead className={classes.thead}>
+        <table cellSpacing="10" className={`${classes.table} ${classes.zigzag}`}>
+          <thead>
             <tr>
               <th>Mission Name</th>
               <th>Launch Site</th>
@@ -29,13 +29,9 @@ const Launches: FC<Props> = ({ launches }: Props) => {
           <tbody>
             {launches.map((launch, index) => (
               <tr key={`${launch.mission_name}-${index}`}>
-                <td className={classes.td1}>{launch.mission_name}</td>
-                <td className={classes.td2}>
-                  {launch.launch_site.site_name_long}
-                </td>
-                <td className={classes.td3}>
-                  {dateFormatter(launch.launch_date_local)}
-                </td>
+                <td>{launch.mission_name}</td>
+                <td>{launch.launch_site.site_name_long}</td>
+                <td>{dateFormatter(launch.launch_date_local)}</td>
               </tr>
             ))}
           </tbody>

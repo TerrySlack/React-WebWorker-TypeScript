@@ -1,9 +1,7 @@
 const styles = {
-  container: {    
-    backgroundColor: '#000',
+  container: {        
     color: "goldenrod",
     width: "100%",
-    height: "98vh",
   },
   primeNumbers: {
     width: "100%",
