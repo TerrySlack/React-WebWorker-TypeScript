@@ -18,7 +18,7 @@ const Launches: FC<Props> = ({ launches }: Props) => {
         </span>
       </div>
       <div className={`${classes.scroll} ${classes.center}`}>
-        <table>
+        <table className={classes.responsiveTable}>
           <thead className={classes.thead}>
             <tr>
               <th>Mission Name</th>

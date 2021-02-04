@@ -3,7 +3,7 @@ const styles = {
     backgroundColor: '#000',
     color: "goldenrod",
     width: "100%",
-    height: "100vh",
+    height: "98vh",
   },
   primeNumbers: {
     width: "100%",
