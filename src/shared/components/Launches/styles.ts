@@ -106,6 +106,7 @@ const styles = {
     "& tbody tr": {     
       "&:nth-child(odd)": {
         transform: "rotate(1deg)",
+        color:"#fff"
       },
       "&:nth-child(even)": {
         transform: "rotate(-1deg)",

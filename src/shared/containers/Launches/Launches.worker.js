@@ -1,7 +1,7 @@
 //Remember, don't use the import statement here.  It's not a ts file and won't be transpiled to something that IE can't read
 const axios = require("axios");
 const ctx = self;
-const launchData = 
+
 //Do an initial sort by the launch Daee
 const compare = (a, b)=> {
   const dateA = new Date(a.launch_date_local);
