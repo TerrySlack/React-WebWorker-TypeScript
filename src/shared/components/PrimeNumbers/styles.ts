@@ -5,7 +5,7 @@ const styles = {
   },
   primeOdd: {
     border: "12px solid goldenrod",
-    color: "dodgerblue",
+    color: "silver",
   },
   common: {
     display: "flex",

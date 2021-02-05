@@ -1,12 +1,13 @@
-import React, { FC } from "react";
+import React, { FC, memo } from "react";
 import { createUseStyles } from "react-jss";
 
 import styles from "./styles";
 import { dateFormatter } from "../../../utils/dateFormatter";
+import { areEqualShallow } from "../../../utils/areEqual";
 interface Props {
   launches: any[];
 }
-const Launches: FC<Props> = ({ launches }: Props) => {
+const Launches: FC<Props> = memo(({ launches }: Props) => {
   //Use React-JSS to deal with styles and the issue of uniquie class names and avoiding global collisions
   const useStyles = createUseStyles(styles);
   const classes = useStyles(styles);
@@ -39,5 +40,5 @@ const Launches: FC<Props> = ({ launches }: Props) => {
       </div>
     </div>
   );
-};
+}, areEqualShallow);
 export default Launches;

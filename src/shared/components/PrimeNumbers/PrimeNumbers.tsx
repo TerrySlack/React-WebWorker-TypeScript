@@ -14,7 +14,7 @@ interface Props {
 */
 const primesHelper = (primeNumbers: number[], classes: any) =>
   primeNumbers?.map((prime: number, index: number) => {
-    const className = index % 2 ? classes.primeEven : classes.primeOdd;
+    const className = index % 2 ? classes.primeOdd : classes.primeEven;
     return (
       <div key={prime} className={`${classes.common} ${className}`}>
         {prime}
