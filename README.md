@@ -2,15 +2,12 @@
 yarn or npm install
 
 ## Run the app
-If using git bash:  
-    yarn && yarn dev
+    yarn && yarn dev (bash)
+    yarn then yarn dev (powershell)
     or
     npm install
     npm run dev
 
-if powerShell
-    yarn
-    yarn dev
 
 ## React-JSS
 Note how I use React-JSS to ensure that all css is relevant to the component that calls it only.
