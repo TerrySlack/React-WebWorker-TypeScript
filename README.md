@@ -10,11 +10,10 @@ yarn or npm install
 
 
 ## React-JSS
-Note how I use React-JSS to ensure that all css is relevant to the component that calls it only.
+I use React-JSS to ensure that all css is scoped to the component that calls it only.
 You can have the same classname through the app, in different components, but ReactJSS will ensure
 that the classes are renamed and mangled for each style.ts file in the app.
-This helps stop manually having to update (s)css, worry about collions and use !important everywhere.
-
+Short term goal is to not use React-JSS, and implement css modules
 ## This is a small demo to show how you can use a web worker in React.  
 The webworker generates prime numbers based on the limit of numbers sent in.
 Take alook at the PrimeNumbers container and you can see how the worker is implemented.
